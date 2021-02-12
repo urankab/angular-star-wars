@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { StarWarsService } from './star-wars.service';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
-  title = 'angular-light-dark';
+export class AppComponent implements OnInit {
+  swService: StarWarsService
+
+  constructor(swService: StarWarsService) {
+    this.swService = swService
+  }
+
+  ngOnInit() {
+    this.swService.fetchCharacters()
+  }
 }
