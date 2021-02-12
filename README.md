@@ -8,3 +8,4 @@
 * build SPA using RouterModule
   * path, component, redirectTo, children, pathMatch
 * rxjs library - reactivity (subject)
+* HttpClientModule, www.swapi.dev API GET request
