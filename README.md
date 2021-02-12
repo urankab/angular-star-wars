@@ -7,4 +7,4 @@
   * use a service in a service!
 * build SPA using RouterModule
   * path, component, redirectTo, children, pathMatch
-* rxjs library - reactivity
+* rxjs library - reactivity (subject)
